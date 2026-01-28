@@ -1,6 +1,7 @@
 // Data types
 
 // Promitive data types - Oddiy, sodda malumot turlari
+// Promitive data types - bir ozgaruvchi va bir qiymat
 // 1. String - yozuv
 // let text = `string text`;
 // console.log(text);
@@ -32,8 +33,34 @@ console.log(userName); // underfined
 let example_one = 9007199254740991n + 1n
 let example_two = -9007199254740991n + 2n
 
-// Symbol - shifrash
+// Symbol - shifrash, unique qiymatlar uchun
+let id = Sumbol('id')
+
+let userInfo = {
+    name: "Dilshod",
+    [id]: 9999
+}
+
+console.log(userInfo[id]);
 // Nonprimitive data types - Murakkab malumot turlari
-// 8.  Objekt
-// 9.  Array
-// 10. function
+// Nonprimitive data types - 1 ozgaruvchi, 1 nechta qiymatlar
+// 8.  Objekt ---> Array, function
+// let person = {
+//     name: "Dilshod",
+//     age: 21,
+//     isGrduaded: true,
+//     nationality: "uz"
+// }
+
+console.table(person)
+
+// Array - list
+let cars = ['BMW', 'Cobalt', 'Zil', 'Zaparoj','mers musr']
+
+// Functions
+
+function sayHello() {
+    return 'Hello!'
+}
+
+console.log(sayHallo());
